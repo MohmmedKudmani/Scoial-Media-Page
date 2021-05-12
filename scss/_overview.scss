@@ -1,0 +1,104 @@
+.overview {
+  .title {
+    padding: 2rem 0rem;
+  }
+  .cards {
+    .cards1 {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 2.5rem;
+    }
+
+    .cards2 {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 2.5rem;
+    }
+  }
+  .card-facbook,
+  .card-twitter,
+  .card-insta,
+  .card-youtupe {
+    background: $l-Light-Grayish-Blue-Card;
+    width: 15rem;
+    padding: 1.5rem 1.5rem;
+    width: 20%;
+    border-radius: 5px;
+
+    .icon {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+
+      p, img {
+        margin-bottom: 2rem;
+        color: $l-Dark-Grayish-Blue-Text;
+        font-weight: $Font-weight;
+      }
+    }
+
+    .days {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .card-facbook {
+    .days {
+      small {
+        color: $p-Bright-Red;
+        font-weight: $Font-weight;
+      }
+
+      .fys {
+        color: $p-Lime-Green;
+        font-weight: $Font-weight;
+      }
+    }
+  }
+
+  .card-twitter {
+    .days {
+      small {
+        color: $p-Lime-Green;
+        font-weight: $Font-weight;
+      }
+    }
+  }
+
+  .card-insta {
+    .days {
+      small {
+        color: $p-Lime-Green;
+        font-weight: $Font-weight;
+      }
+    }
+  }
+
+  .card-youtupe {
+    .days {
+      small {
+        color: $p-Bright-Red;
+        font-weight: $Font-weight;
+      }
+    }
+  }
+}
+.overview-dark-mode {
+  background-color: $d-Very-Dark-Blue-bg;
+  color: $d-White-Text;
+}
+
+.overview-dark-mode-cards {
+  background-color: $d-Dark-Desaturated-Blue-Card !important;
+  p {
+    color: $d-Desaturated-Blue-Text !important;
+  }
+}

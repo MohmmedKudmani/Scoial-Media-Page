@@ -1,0 +1,481 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+.header {
+  height: 40vh;
+  background-color: #f5f7ff;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2.5rem;
+}
+
+.header .text small {
+  color: #63687e;
+  font-weight: 700;
+}
+
+.header .checkbox-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .checkbox-text small {
+  color: #63687e;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.header .switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.header .switch .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #aeb3cb;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 34px;
+}
+
+.header .switch .slider::before {
+  content: "";
+  position: absolute;
+  height: 1.6rem;
+  width: 1.6rem;
+  top: 3px;
+  left: 3px;
+  background-color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3.125rem;
+}
+
+.header .switch input {
+  cursor: pointer;
+  opacity: 0;
+}
+
+.header input:checked + .slider {
+  background-image: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background-image: linear-gradient(to right, #378fe6, #3eda82);
+}
+
+.header input:checked + .slider:before {
+  -webkit-transform: translateX(2rem);
+          transform: translateX(2rem);
+}
+
+.header-dark-mode {
+  background-color: #1f212e !important;
+}
+
+.header-dark-mode h1 {
+  color: white;
+}
+
+.header-dark-mode small {
+  color: #8b97c6 !important;
+}
+
+.card-section .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: -7rem;
+}
+
+.card-section .cards .card-facbook,
+.card-section .cards .card-twitter,
+.card-section .cards .card-insta,
+.card-section .cards .card-youtupe {
+  background-color: #f0f2fa;
+  padding: 2.5% 0%;
+  border-radius: 5px;
+  width: 20%;
+  text-align: center;
+}
+
+.card-section .cards .card-facbook h1,
+.card-section .cards .card-twitter h1,
+.card-section .cards .card-insta h1,
+.card-section .cards .card-youtupe h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+
+.card-section .cards .card-facbook p,
+.card-section .cards .card-twitter p,
+.card-section .cards .card-insta p,
+.card-section .cards .card-youtupe p {
+  color: #63687e;
+}
+
+.card-section .cards .card-facbook .icon,
+.card-section .cards .card-twitter .icon,
+.card-section .cards .card-insta .icon,
+.card-section .cards .card-youtupe .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #63687e;
+  font-weight: 700;
+}
+
+.card-section .cards .card-facbook .icon img,
+.card-section .cards .card-twitter .icon img,
+.card-section .cards .card-insta .icon img,
+.card-section .cards .card-youtupe .icon img {
+  margin-right: 0.7rem;
+}
+
+.card-section .cards .card-facbook .days,
+.card-section .cards .card-twitter .days,
+.card-section .cards .card-insta .days,
+.card-section .cards .card-youtupe .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.7rem;
+}
+
+.card-section .cards .card-facbook .days img,
+.card-section .cards .card-twitter .days img,
+.card-section .cards .card-insta .days img,
+.card-section .cards .card-youtupe .days img {
+  margin-right: 0.5rem;
+}
+
+.card-section .cards .card-facbook .days small,
+.card-section .cards .card-twitter .days small,
+.card-section .cards .card-insta .days small,
+.card-section .cards .card-youtupe .days small {
+  color: #1db489;
+  font-weight: 700;
+}
+
+.card-section .cards .card-facbook {
+  border-top: 5px #198ff5 solid;
+}
+
+.card-section .cards .card-twitter {
+  border-top: 5px #1ca0f2 solid;
+}
+
+.card-section .cards .card-insta {
+  position: relative;
+}
+
+.card-section .cards .card-insta::after {
+  content: "";
+  position: absolute;
+  top: 0.1px;
+  left: 1px;
+  height: 5px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background-image: linear-gradient(to right, #fdc468, #df4996);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-section .cards .card-youtupe {
+  border-top: 5px #c4032a solid;
+}
+
+.card-section .cards .card-youtupe small {
+  color: #dc414c !important;
+}
+
+.card-section .cards .card-dark-mode {
+  background: #252a41;
+}
+
+.card-section .cards .card-dark-mode h1 {
+  color: white;
+}
+
+.card-section .cards .card-dark-mode p {
+  color: #8b97c6 !important;
+}
+
+.card-dark-mode-bg {
+  background-color: #1e202a;
+}
+
+.overview .title {
+  padding: 2rem 0rem;
+}
+
+.overview .cards .cards1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 2.5rem;
+}
+
+.overview .cards .cards2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 2.5rem;
+}
+
+.overview .card-facbook,
+.overview .card-twitter,
+.overview .card-insta,
+.overview .card-youtupe {
+  background: #f0f2fa;
+  width: 15rem;
+  padding: 1.5rem 1.5rem;
+  width: 20%;
+  border-radius: 5px;
+}
+
+.overview .card-facbook .icon,
+.overview .card-twitter .icon,
+.overview .card-insta .icon,
+.overview .card-youtupe .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overview .card-facbook .icon p, .overview .card-facbook .icon img,
+.overview .card-twitter .icon p,
+.overview .card-twitter .icon img,
+.overview .card-insta .icon p,
+.overview .card-insta .icon img,
+.overview .card-youtupe .icon p,
+.overview .card-youtupe .icon img {
+  margin-bottom: 2rem;
+  color: #63687e;
+  font-weight: 700;
+}
+
+.overview .card-facbook .days,
+.overview .card-twitter .days,
+.overview .card-insta .days,
+.overview .card-youtupe .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overview .card-facbook .days h1,
+.overview .card-twitter .days h1,
+.overview .card-insta .days h1,
+.overview .card-youtupe .days h1 {
+  font-size: 2rem;
+}
+
+.overview .card-facbook .days small {
+  color: #dc414c;
+  font-weight: 700;
+}
+
+.overview .card-facbook .days .fys {
+  color: #1db489;
+  font-weight: 700;
+}
+
+.overview .card-twitter .days small {
+  color: #1db489;
+  font-weight: 700;
+}
+
+.overview .card-insta .days small {
+  color: #1db489;
+  font-weight: 700;
+}
+
+.overview .card-youtupe .days small {
+  color: #dc414c;
+  font-weight: 700;
+}
+
+.overview-dark-mode {
+  background-color: #1e202a;
+  color: white;
+}
+
+.overview-dark-mode-cards {
+  background-color: #252a41 !important;
+}
+
+.overview-dark-mode-cards p {
+  color: #8b97c6 !important;
+}
+
+@media (max-width: 68.75em) {
+  .header {
+    height: 45vh;
+  }
+  .header .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 1rem;
+  }
+  .header .checkbox-text {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .header .text {
+    width: 100%;
+  }
+  .card-section .cards .card-facbook,
+  .card-section .cards .card-twitter,
+  .card-section .cards .card-insta,
+  .card-section .cards .card-youtupe {
+    padding: 1.5rem 0rem;
+  }
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cards .card-facbook,
+  .cards .card-twitter,
+  .cards .card-insta,
+  .cards .card-youtupe {
+    width: 100% !important;
+  }
+  .cards .card-twitter,
+  .cards .card-insta,
+  .cards .card-youtupe {
+    margin-top: 2rem;
+  }
+  .overview .title {
+    width: 100%;
+  }
+  .overview .cards1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .overview .cards2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .overview .card-facbook:first-child {
+    margin-bottom: 2rem;
+  }
+  .overview .card-twitter:first-child {
+    margin-top: 0rem !important;
+  }
+}
+
+@media (max-width: 22.4375em) {
+  .header {
+    height: 55vh;
+  }
+}

@@ -1,0 +1,82 @@
+// mobiles
+@media (max-width: 68.75em) {
+  .header {
+    height: 45vh;
+    .content {
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 1rem;
+    }
+
+    .checkbox-text {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    .text {
+      width: 100%;
+    }
+  }
+
+  .card-section {
+    .cards {
+      .card-facbook,
+      .card-twitter,
+      .card-insta,
+      .card-youtupe {
+        padding: 1.5rem 0rem;
+      }
+    }
+  }
+
+  .cards {
+    justify-content: center;
+    flex-direction: column;
+
+    .card-facbook,
+    .card-twitter,
+    .card-insta,
+    .card-youtupe {
+      width: 100% !important;
+    }
+
+    .card-twitter,
+    .card-insta,
+    .card-youtupe {
+      margin-top: 2rem;
+    }
+  }
+
+  .overview {
+    .title {
+      width: 100%;
+    }
+
+    .cards1 {
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .cards2 {
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .card-facbook:first-child {
+      margin-bottom: 2rem;
+    }
+
+    .card-twitter:first-child {
+      margin-top: 0rem !important;
+    }
+  }
+}
+
+// iphone 5
+@media (max-width: 22.4375em) {
+  .header {
+    height: 55vh;
+  }
+}
